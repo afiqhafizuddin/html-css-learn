@@ -42,7 +42,31 @@
         /* FLEXBOX */
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        /* gap: 30px; */
+      }
+
+      .el {
+        /* Default values */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+         */
+
+        flex-basis: 100px;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
