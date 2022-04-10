@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -62,9 +63,13 @@ nav {
 
 .row {
   display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
 }
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  flex: 1;
+  margin-bottom: 0;
 }
 
 .post-header {
@@ -76,6 +81,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  flex: 0 0 300px;
 }
 
 /* Smaller Elements */
