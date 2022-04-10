@@ -20,12 +20,49 @@ body {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
 nav {
   font-size: 18px;
 }
 
+.row {
+  display: flex;
+}
 article {
   margin-bottom: 60px;
 }
@@ -39,7 +76,6 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
-  width: 500px;
 }
 
 /* Smaller Elements */
@@ -65,6 +101,12 @@ h3 {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 p {
@@ -110,10 +152,6 @@ li:first-child {
   font-weight: bold;
 }
 
-li:last-child {
-  font-style: italic;
-}
-
 article p:first-child {
   color: red;
 }
@@ -144,8 +182,8 @@ a:active {
 }
 
 nav a:link {
-  margin-right: 30px;
-  margin-top: 10px;
+  /* margin-right: 30px;
+  margin-top: 10px; */
   display: inline-block;
 }
 
