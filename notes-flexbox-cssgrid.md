@@ -50,3 +50,31 @@
 ### Flex Container
 
 ### Flex Items
+
+### CSS Grid
+
+- CSS grid is a set of `CSS Properties` for building 2-D layouts
+- Main idea of CSS Grid: Divide a container element into rows and columns
+- less nested HTML and easier-to-read CSS
+
+### CSS Grid: Container
+
+- Grid container
+- Grid items
+- column axis
+- row axis
+
+```css
+display: grid;
+```
+
+- grid lines
+- grid cells
+- gutters (gap)
+- grid track (row/column)
+
+### Properties
+
+```CSS
+grid-template-rows:
+```
