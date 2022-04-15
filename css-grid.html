@@ -41,14 +41,36 @@
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 250px 250px 150px 150px;
-        grid-template-rows: 300px 200px;
+        /* grid-template-columns: 2fr 1.5fr 0.5fr; */
+        grid-template-columns: repeat(4, 1fr);
+
+        /* grid-template-rows: 300px 200px; */
+        grid-template-rows: 1fr 1fr 1fr;
+        /* height: 600px; */
 
         gap: 30px;
 
         /* defining row and column gaps: not possible in CSS Flexbox; */
         column-gap: 30px;
         row-gap: 60px;
+      }
+
+      .el--8 {
+        /* grid-column: 2/3;
+        grid-row: 1/2; */
+
+        /* grid-column: 1 / span 3; */
+        grid-column: 2 / -1;
+        grid-row: 2;
+      }
+
+      .el--2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+
+      .el--6 {
+        grid-row: 3 / 5;
       }
 
       .container--2 {
@@ -73,17 +95,17 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
-    <div class="container--2">
+    <!-- <div class="container--2">
       <div class="el el--1">(1)</div>
       <div class="el el--3">(3)</div>
       <div class="el el--4">(4)</div>
       <div class="el el--5">(5)</div>
       <div class="el el--6">(6)</div>
       <div class="el el--7">(7)</div>
-    </div>
+    </div> -->
   </body>
 </html>
